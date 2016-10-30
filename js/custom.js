@@ -1,0 +1,1 @@
+!function(n){n(document).ready(function(){n(".contact-form form").submit(function(){var e=n(this).find("[name=name]").val(),a=n(this).find("[name=email]").val(),i=n(this).find("[name=service]").val(),m=n(this).find("[name=message]").val();return n.post("bin/sendMail.php",{name:e,email:a,service:i,message:m},function(e){n(".contact-form form .success").fadeIn()}),!1})})}(jQuery);
